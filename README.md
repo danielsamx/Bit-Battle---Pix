@@ -1,5 +1,4 @@
-# Kael: The Top-down Chronicles
-
+# Bit Battle - Pix
 Un juego RPG retro top-down desarrollado con **Phaser 3** y **Vite**.
 
 ## Características del Juego
