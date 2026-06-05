@@ -1,0 +1,16 @@
+{
+  "name": "phaser3-topdown-rpg",
+  "version": "1.0.0",
+  "description": "Juego top-down RPG con sistema de armas, recarga, enemigos progresivos y jefe final",
+  "main": "src/main.js",
+  "scripts": {
+    "generate-assets": "node generate-assets.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.2.11"
+  }
+}

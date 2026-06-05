@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bit Battle - Pix</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d0c1d;
+      color: #e2e8f0;
+      font-family: 'Press Start 2P', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #f6ad55;
+      text-shadow: 2px 2px #000;
+      text-align: center;
+    }
+
+    #game-container {
+      border: 4px solid #4a5568;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+      border-radius: 8px;
+      background-color: #000;
+    }
+
+    .instructions {
+      margin-top: 15px;
+      font-size: 10px;
+      color: #a0aec0;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .instructions span {
+      color: #edf2f7;
+      background: #2d3748;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin: 0 2px;
+    }
+  </style>
+  <!-- Load Phaser 3 via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+
+  <h1>BIT BATTLE - PIX</h1>
+  
+  <div id="game-container"></div>
+
+  <div class="instructions">
+    Moverse: <span>W</span><span>A</span><span>S</span><span>D</span> o <span>Flechas</span> | 
+    Apuntar: <span>Ratón</span> | Disparar: <span>Click Izq.</span> | 
+    Armas: <span>1</span>, <span>2</span>, <span>3</span> | 
+    Recargar: <span>R</span>
+  </div>
+
+  <!-- Game main module script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
