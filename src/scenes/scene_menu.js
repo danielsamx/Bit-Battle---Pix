@@ -78,12 +78,13 @@ export class SceneMenu extends Phaser.Scene {
     this.load.audio('dano_recibido', 'assets/audio/dano_recibido.wav');
     this.load.audio('muerte_jugador', 'assets/audio/muerte_jugador.wav');
     this.load.audio('game_over', 'assets/audio/game_over.wav');
-    this.load.audio('ambient_loop', 'assets/audio/ambiente_loop.wav');
+    this.load.audio('ambient_loop', 'assets/audio/dry-thunder-ambient.wav');
     this.load.audio('disparo_arma', 'assets/audio/disparo_arma.wav');
   }
 
   create() {
     // Play Menu Sound once
+    this.sound.play('ambient_loop', { volume: 0.5 })
     this.sound.play('menu', { volume: 0.5 });
 
     // Register Animations
